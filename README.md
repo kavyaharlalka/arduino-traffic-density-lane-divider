@@ -49,3 +49,22 @@ seconds.
 11. First the green Led goes off
 12. Orange Led comes on for a second or so.
 13. Red LED starts glowing.
+14. After a few seconds, the output ports from 8 to 11 are given values to rotate the
+motors in opposite directions (one clockwise and the other counter-clockwise).
+15. After the completion of one full rotation, The red led stops glowing and green led
+glows again. Output ports 8 to 11 again given 00.
+16. Now this will be in an infinite loop until all three receivers don’t receive inputs. Then
+a delay of one second is given and this condition is checked again
+17. This is repeated thrice (about 3 seconds).
+18. If anytime any of the input ports go high, it goes back to the infinite loop.
+19. If for all three seconds all three input ports are low, the green led stops glowing
+20. The orange led glows for a second
+21. The Red LED starts glowing
+22. After a few seconds, the output ports 8 to 11 are given values to rotate the motors in
+opposite directions (one clockwise and the other counter-clockwise). This time they
+are both given opposite of what they were given before.
+23. After the completion of one full rotation, the red led stops glowing and green led
+glows again. Output ports 8 to 11 are again given 00.
+24. Again it goes into infinite loop till all input ports are high for more than 10 seconds
+continuously.
+25. And so the circuit continues to operate
