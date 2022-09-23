@@ -66,7 +66,7 @@ void reverse()
 	
 	}
 
-outer:;
+	outer:;
 }
 
 void main()
